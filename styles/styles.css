@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.base-container {
+    max-width: 100vw;
+    max-height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    padding: 0.7rem;
+}
+
+.nav {
+    background-color: #1e293b;
+    width: 15%;
+}
+
+.nav > ul > li {
+    list-style: none;
+    margin-top: 2rem;
+}
+
+.nav > ul > li > a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.main {
+    grid-area: main;
+    width: 85%;
+    margin-left: 2rem;
+}
+
+.top-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F0F0F0;
+    padding: 1rem;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    
+}
+
+.bottom-section {
+    margin-top: 4rem;
+    background-color: #F0F0F0;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    height: 79%;
+}
+
+.out-text {
+    position: relative;
+    bottom: 1.3rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.pObjs-container {
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: space-around;
+    flex-wrap: wrap;
+}
+
+.pObj-content {
+    border: 2px solid black;
+    min-width: 15rem;
+    max-width: 15rem;
+    max-height: 7.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.user-card {
+    display: flex;
+    align-items: center;
+}
+
+/*UTILITY CLASSES*/
+.f-h {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.userIcon {
+    width: 2rem;
+}
